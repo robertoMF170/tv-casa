@@ -1,0 +1,25 @@
+name: validar-canais
+on:
+  schedule:
+    - cron: "30 6 * * *"   # 06:30 Lisboa, todos os dias
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/validar.py
+      - name: Guardar estado
+        run: |
+          git config user.name "tv-casa-bot"
+          git config user.email "actions@github.com"
+          git add estado.json
+          git diff --cached --quiet || git commit -m "validação diária dos canais"
+          git push

@@ -1,0 +1,12 @@
+[
+  {"nome": "RTP 1", "url": "https://streaming-live.rtp.pt/liverepeater/rtp1HD.smil/playlist.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"},
+  {"nome": "RTP 2", "url": "https://streaming-live.rtp.pt/liverepeater/rtp2HD.smil/playlist.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"},
+  {"nome": "SIC", "url": "https://sic.live.impresa.pt/sic.m3u8", "referer": "https://sic.pt/", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"},
+  {"nome": "TVI", "url": "https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvi.m3u8"},
+  {"nome": "RTP 3", "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpn.smil/playlist.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"},
+  {"nome": "SIC Notícias", "url": "https://sicnot.live.impresa.pt/sicnot.m3u8", "referer": "https://sicnoticias.pt/", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"},
+  {"nome": "CNN Portugal", "url": "https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/cnnpt.m3u8"},
+  {"nome": "RTP Memória", "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"},
+  {"nome": "RTP Açores", "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpacoresHD.smil/playlist.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"},
+  {"nome": "RTP Madeira", "url": "https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8", "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0"}
+]
