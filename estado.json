@@ -1,18 +1,21 @@
 {
- "validado_em": "2026-10-27T16:45:01+01:00",
+ "validado_em": "2026-10-27T16:46:11+01:00",
+ "validado_de": "GitHub Actions (fora de PT)",
  "total": 10,
  "ok": [
   "RTP 1",
-  "RTP 2",
   "TVI",
   "RTP 3",
   "CNN Portugal",
-  "RTP Açores"
- ],
- "mortos": [
-  "SIC",
-  "SIC Notícias",
   "RTP Memória",
   "RTP Madeira"
+ ],
+ "geo_bloqueados_vivos_em_pt": [
+  "SIC",
+  "SIC Notícias"
+ ],
+ "mortos": [
+  "RTP 2",
+  "RTP Açores"
  ]
 }
