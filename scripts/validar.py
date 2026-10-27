@@ -2,6 +2,7 @@
 """Valida os streams de canais.json e escreve estado.json (corre no GitHub Actions, fora de PT).
 Os streams PT fazem geo-block: 403/451 fora de Portugal = canal provavelmente VIVO em PT.
 Só 404/erros de ligação = morto a sério."""
+import gzip
 import json
 import urllib.request
 import urllib.error
@@ -19,7 +20,10 @@ def testar(canal):
         req.add_header("Referer", canal["referer"])
     try:
         with urllib.request.urlopen(req, timeout=15) as r:
-            bloco = r.read(200).decode("utf-8", "ignore")
+            cru = r.read(200)
+        if cru[:2] == b"\x1f\x8b":  # resposta gzip
+            cru = gzip.decompress(cru)
+        bloco = cru.decode("utf-8", "ignore")
         return "ok" if bloco.lstrip().startswith("#EXTM3U") else "morto"
     except urllib.error.HTTPError as e:
         return "geo" if e.code in GEO_CODES else "morto"
