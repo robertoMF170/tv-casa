@@ -1,12 +1,11 @@
 {
- "validado_em": "2026-11-23T19:31:43+01:00",
+ "validado_em": "2026-11-24T18:58:43+01:00",
  "validado_de": "GitHub Actions (fora de PT)",
  "total": 10,
  "ok": [
   "TVI",
   "RTP 3",
   "CNN Portugal",
-  "RTP Memória",
   "RTP Açores",
   "RTP Madeira"
  ],
@@ -16,6 +15,7 @@
  ],
  "mortos": [
   "RTP 1",
-  "RTP 2"
+  "RTP 2",
+  "RTP Memória"
  ]
 }
